@@ -14,7 +14,13 @@ public class WelbeckController {
 
     @RequestMapping("/check")
     public String check() {
-        return pageChecker.checkOn(pageRepository);
+        Boolean check = false;
+        if (check == true) {
+            return "Found";
+        }
+        else {
+            return "Not found";
+        }
     }
 
     @RequestMapping("/list")

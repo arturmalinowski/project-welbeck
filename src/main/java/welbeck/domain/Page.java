@@ -16,4 +16,8 @@ public class Page {
     public Url getUrl() {
         return url;
     }
+
+    public BigDecimal getTargetPrice() {
+        return targetPrice;
+    }
 }

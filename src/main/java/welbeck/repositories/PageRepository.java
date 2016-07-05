@@ -26,4 +26,8 @@ public class PageRepository {
     public List<Url> getUrls() {
         return pageList.stream().map(page -> page.getUrl()).collect(Collectors.toList());
     }
+
+    public List<Page> getPageList() {
+        return pageList;
+    }
 }
